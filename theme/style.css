@@ -1,0 +1,212 @@
+/*------------------------------------*\
+Apaxy
+by @adamwhitcroft
+
+Theme name: Apaxy
+Theme author: @adamwhitcroft
+\*------------------------------------*/
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+/* Have to use @import for the font, as you can only specify a single stylesheet */
+* {
+    margin:0;
+    padding:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box; 
+}
+
+html {
+    min-height:100%;
+    font-family:'Open Sans', sans-serif;
+    line-height:2em;
+}
+code {
+    font-family:consolas,monospace;	
+}
+a {
+    color:#61666c;
+    text-decoration: none;
+}
+a:hover {
+    color:#2a2a2a;
+    text-decoration: none;
+}
+/*------------------------------------*\
+Wrapper
+\*------------------------------------*/
+.wrapper {
+    margin:0 auto;
+    padding-top:20px;
+    max-width:500px;
+}
+/*------------------------------------*\
+Demo block
+\*------------------------------------*/
+.block {
+    margin:20px 0;
+    padding:20px;
+    color:#9099A3;
+}
+/*------------------------------------*\
+Table (directory listing)
+\*------------------------------------*/
+table {
+    width:100%;
+    border-collapse:collapse;
+    border-spacing: 0;
+    margin-bottom: 20px;
+}
+tr {
+    outline:0;
+    border:0;
+}
+tr:hover td {
+    background:#f6f6f6;
+}
+th {
+    text-align:left;
+    padding-right:20px;
+}
+/* 2nd Column: Filename */
+th + th {
+    width:70%;
+}
+/* 3rd Column: Last Modified */
+th + th + th {
+}
+/* 4th Column: Size */
+th + th + th + th {
+    width:5%;
+}
+tr td:first-of-type {
+    padding-left:10px;
+    padding-right:10px;
+}
+td {
+    padding:5px 0;
+    outline:0;
+    border:0;
+    border-bottom:1px solid #edf1f5;
+    vertical-align:middle;
+    text-align:left;
+    -webkit-transition:background 300ms ease;
+    -moz-transition:background 300ms ease;
+    -ms-transition:background 300ms ease;
+    -o-transition:background 300ms ease;
+    transition:background 300ms ease;
+}
+td a{
+    display: block;
+}
+tr.parent a {
+    color:#9099A3;
+}
+.parent a:hover {
+    color:#2281d0;
+}
+/*------------------------------------*\
+Footer
+\*------------------------------------*/
+.footer {
+    text-align:center;
+}/*!
+  * Bootstrap v3.0.0 by @fat and @mdo
+  * Copyright 2013 Twitter, Inc.
+  * Licensed under http://www.apache.org/licenses/LICENSE-2.0
+  *
+  * Designed and built with all the love in the world by @mdo and @fat.
+  */
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+
+
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.428571429;
+    vertical-align: top;
+    border-top: 1px solid #dddddd;
+    margin-left: 10px;
+}
+
+table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dddddd;
+}
+
+table > caption + thead > tr:first-child > th,
+table > colgroup + thead > tr:first-child > th,
+table > thead:first-child > tr:first-child > th,
+table > caption + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > td,
+table > thead:first-child > tr:first-child > td {
+    border-top: 0;
+}
+
+table > tbody > tr:last-child > td {
+    border-bottom: 2px solid #dddddd;
+}
+
+table > tbody + tbody {
+    border-top: 2px solid #dddddd;
+}
+
+table .table {
+    background-color: #ffffff;
+}
+
+
+table {
+    margin-bottom: 20px;
+    border: 1px solid #d8d8d8;
+    /*    box-shadow:0px 0px 5px #A7A7A7;
+    -moz-box-shadow:0px 0px 5px #A7A7A7;
+    -webkit-box-shadow:0px 0px 5px #A7A7A7;*/
+}
+
+table > tbody > tr:nth-child(odd) > td,
+table > tbody > tr:nth-child(odd) > th {
+    background-color: #f9f9f9;
+}
+
+table > tbody > tr:first-child > th {
+    background: #F4F9FF;
+}
+
+table > thead > tr > th {
+    background: #F4F9FF;
+}
+table > tbody > tr > td:hover,
+table > tbody > tr > td > a:hover {
+    text-decoration:none;
+    background-color:#f5f5f5;
+    -webkit-transition:background 600ms ease;
+    -moz-transition:mozbackground 600ms ease;
+    -ms-transition:background 600ms ease;
+    -o-transition:background 600ms ease;
+    transition:background 600ms0ms ease;
+}
+
+table > thead > tr > th,
+table > tbody > tr > td {
+    -webkit-transition:background 600ms ease;
+    -moz-transition:mozbackground 600ms ease;
+    -ms-transition:background 600ms ease;
+    -o-transition:background 600ms ease;
+    transition:background 600ms0ms ease;
+}
+
+table > tbody > tr > td > a {
+    display: block
+}
+.icon-gold {
+    color: #DAA520;
+}
+
+.modal .modal-body {
+    max-height: 400px;
+    overflow-y: auto;
+}

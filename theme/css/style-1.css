@@ -1,0 +1,138 @@
+/* Body background color added */
+body {
+    background: none repeat scroll 0 0;
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.428571429;
+}
+
+.carousel-caption-text a {
+	color: #E66C2C
+}
+
+.carousel-caption a:hover {
+	text-decoration: none
+}
+
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+}
+
+.content {
+    margin: 40px 0 20px 20px;
+}
+
+/* Custom container */
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px; }
+
+.container-narrow > hr {
+  margin: 30px 0; }
+
+.navbar {
+    border-color: #463265;
+}
+
+/* posts index */
+.post > h3.title {
+  position: relative;
+  padding-top: 10px; }
+
+.post > h3.title span.date {
+  position: absolute;
+  right: 0;
+  font-size: 0.9em; }
+
+.post > .more {
+  margin: 10px 0;
+  text-align: left; }
+
+/* post-full*/
+.post-full .date {
+  margin-bottom: 20px;
+  font-weight: bold; }
+
+/* sidebar */
+.sidebar {
+    margin: 40px 20px 20px 0; }
+
+/* tag_box */
+.tag_box {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; }
+
+.tag_box li {
+  line-height: 28px; }
+
+.tag_box li i {
+  opacity: 0.9; }
+
+.tag_box.inline li {
+  float: left; }
+
+.tag_box a {
+  padding: 3px 6px;
+  margin: 2px;
+  background: #eee;
+  color: #555;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 1px dashed #cccccc; }
+
+.tag_box a span {
+  vertical-align: super;
+  font-size: 0.8em; }
+
+.tag_box a:hover {
+  background-color: #e5e5e5; }
+
+.tag_box a.active {
+  background: #57A957;
+  border: 1px solid #4c964d;
+  color: #FFF; }
+
+.wrapper {
+    background-color: #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 30px;
+}
+
+.widget-wrapper {
+    background-color: #F9F9F9;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px 4px 4px 4px;
+    margin: 0 0 20px;
+    padding: 20px;
+}
+
+.widget-title {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 23px;
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: left;
+}
+
+#wrap {
+	margin: 0 auto;
+}
+
+.justify {
+    font-size:14px;
+    text-align:justify;
+}
+
+#ContentCol {
+    display:block;
+    color:#2F373D;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}

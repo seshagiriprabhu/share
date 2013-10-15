@@ -1,0 +1,365 @@
+<head lang="en">
+    <meta charset="utf-8">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="initial-scale=1; maximum-scale=1">-->
+
+    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="/share/theme/js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/share/theme/icons/favicon.ico">
+    <!-- Le styles -->
+    <link href="/share/theme/css/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/share/theme/css/bootstrap.3.0.0.css" rel="stylesheet">
+    <link href="/share/theme/css/docs.css" rel="stylesheet">
+    <link href="/share/theme/css/style-1.css" rel="stylesheet">
+    <link href="/share/theme/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+    <!-- Le styles -->
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/font-awesome/css/font-awesome-ie7.css">
+    <![endif]-->
+</head>
+<!-- NAVBAR
+================================================== -->
+<div class="navbar-wrapper">
+    <div class="container">
+        <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><span class="icon icon-youtube-play icon-white"></span> LAN Movie DB RC1</a>
+            </div> <!-- navbar-header -->
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav pull-right">
+                <li><a data-toggle="modal" href="#modalContribute"><span style="font-size:18px" class="icon icon-github-alt icon-white"></span> Contribute</a></li>
+                <li><a data-toggle="modal" href="#modalFAQ"><span style="font-size:18px" class="icon icon-question-sign icon-white"></span> FAQ</a></li>
+                <li><a data-toggle="modal" href="#modalReviews"><span style="font-size:18px" class="icon icon-comments icon-white"></span> Ratings</a></li>
+                <li><a data-toggle="modal" href="#modalRSS"><span style="font-size:18px" class="icon icon-rss icon-white"></span> RSS</a></li>
+            </ul>
+            </nav> <!-- navbar-collapse -->
+        </div> <!-- container -->
+        </header> <!-- navbar navbar-inverse --> 
+    </div> <!-- container -->
+</div><!-- navbar-wrapper -->
+
+<!-- Modal Contribue -->
+<div class="modal fade" id="modalContribute" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h2 class="modal-title"><span class="icon icon-github-alt"></span> How to contribute?</h2>
+            </div> <!-- modal-header -->
+            <div class="modal-body">
+                <h3> Share with Us!</h3>
+                <p class="justify">This movie share works like an opensource project. If you have any 
+                movies with you, please feel free to share with us!</p>
+                <h3><span class="icon icon-windows"></span> Windows Users</h3>
+                <p>Type <strong><span class="icon icon-windows"></span> + R</strong> and enter below path:</p>
+                <pre>\\10.30.9.78\Drop_Your_Mo</pre>
+                <h3><span class="icon icon-linux"></span> GNU/Linux Users</h3>
+                <p>Type <strong>ALT + F2</strong> and enter below path:</p>
+                <pre>smb://10.30.9.78/Drop_Your_Mo/</pre>
+                </div>
+                <div class="bs-callout bs-callout-danger">
+                    <h4><span class="icon icon-bug"></span> Disclaimer </h4>
+                    <p class="justify">
+                    Piracy of intellectual property that’s protected by copyright law is a serious crime!
+                    Not only does it rob the makers of recordings, videos, movies, games, and other creative 
+                    works of the money they are entitled to, but it costs tens of thousands of people their 
+                    jobs each year. It also deprives governments at all levels of tax revenue. Piracy itself 
+                    is a crime, and it causes an increase in other types of crime. Let this repo be secret 
+                    among ourselves. Do not share this to anyone outside our office. Copy and watch movies
+                    at your own risk.
+                    </p>
+                </div> <!-- bs-callout -->
+                <div class="modal-footer">
+                    <button type="button" href="#" data-dismiss="modal" class="btn btn-primary">Close</button>
+                </div> <!-- modal-footer -->
+            </div> <!-- modal-body -->
+        </div> <!-- modal-content -->
+    </div> <!-- modal-dialog -->
+</div> <!-- modal fade -->
+<!-- End Modal Contribute -->
+<!-- Modal FAQ -->
+<div class="modal fade" id="modalFAQ" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2 class="modal-title"><span class="icon icon-question-sign"></span> Frequently Asked Questions</h2>
+            </div> <!-- modal-header -->
+            <div class="modal-body">
+                <h3>How to watch videos from your browser?</h3>
+                <p class="justify">
+                Currently Google Chrome doesn't support vlc player
+                plugin and its build-in video player sucks. We highly recommend you to use
+                mozilla firefox with mozilla-plugin-vlc to watch all the videos in our repo.</p>
+                <h4> <span class="icon icon-linux"></span> GNU/Linux Debain based distros </h4>
+                <p class="justify">If you are using Debian based GNU/Linux like Ubuntu, you can install 
+                <strong>mozilla-plugin-vlc</strong> by running the below command in a terminal:</p>
+                <pre>$ sudo apt-get install mozilla-plugin-vlc</pre>
+                <h4> <span class="icon icon-windows"></span> Windows bases OSs </h4>
+                <p class="justify">You can follow the steps mention in this 
+                <a href="https://wiki.videolan.org/Windows/#VLC_Plugin_for_Firefox_.28Mozilla.29" target="_blank">link</a>
+                </p>
+                <h3><span class="icon icon-legal"></span> Are we doing a crime?</h3>
+                <div class="bs-callout bs-callout-danger">
+                    <p class="justify">
+                    Yes, piracy of intellectual property that’s protected by copyright law is a serious crime!
+                    Not only does it rob the makers of recordings, videos, movies, games, and other creative 
+                    works of the money they are entitled to, but it costs tens of thousands of people their 
+                    jobs each year. It also deprives governments at all levels of tax revenue. Piracy itself 
+                    is a crime, and it causes an increase in other types of crime. Let this repo be secret 
+                    among ourselves. Do not share this to anyone outside our office. Copy and watch movies
+                    at your own risk.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" href="#" data-dismiss="modal" class="btn btn-primary">Close</button>
+            </div> <!-- modal-footer -->
+        </div> <!-- modal-body -->
+    </div> <!-- modal-content -->
+</div> <!-- modal-dialog -->
+</div> <!-- modal fade -->
+<!-- End Modal FAQ -->
+<!-- Modal Reviews -->
+<div class="modal fade" id="modalReviews" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h2 class="modal-title"><span class="icon icon-comments"></span> Movie Reviews</h2>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-tabs" id="myTab">
+                    <li class="active"><a data-toggle="tab" href="#hollywood">Hollywood</a></li>
+                    <li><a data-toggle="tab" href="#bollywood">Bollywood</a></li>
+                    <li><a data-toggle="tab" href="#tamil">Tamil</a></li>
+                    <li><a data-toggle="tab" href="#malayalam">Malayalam</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <!-- Hollywood
+                    =========================== -->
+                    <div class="tab-pane active" id="hollywood">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Movie</th>
+                                        <th class="centered">Genre</th>
+                                        <th class="text-right">Ratings</th>
+                                    </tr>
+                                </thead> <!-- thead -->
+                                <tbody>
+                                    <tr>
+                                        <td>Example</td>
+                                        <td class="centered">Comedy</td>
+                                        <td class="text-right"><span class="icon icon-star icon-gold"></span>
+                                            <span class="icon icon-star icon-gold"></span>
+                                            <span class="icon icon-star icon-gold"></span>
+                                            <span class="icon icon-star-half icon-gold"></span>
+                                            <span class="icon icon-star-empty icon-gold"></span>
+                                        </td>
+                                        <tr>
+                                            <td>Example</td>
+                                            <td class="centered">Comedy</td>
+                                            <td class="text-right"><span class="icon icon-star icon-gold"></span>
+                                                <span class="icon icon-star icon-gold"></span>
+                                                <span class="icon icon-star icon-gold"></span>
+                                                <span class="icon icon-star-half icon-gold"></span>
+                                                <span class="icon icon-star-empty icon-gold"></span>
+                                            </td>
+                                        </tr>
+                                    </tr>
+                                </tbody> <!-- tbody -->
+                            </table> <!-- end of table -->
+                        </div> <!-- table-responsive -->
+                    </div> <!-- tab-pane -->
+                    <!-- End of Hollywood
+                    =========================== -->
+                    <!-- Bollywood
+                    =========================== -->
+                    <div class="tab-pane" id="bollywood">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Movie</th>
+                                        <th class="centered">Genre</th>
+                                        <th class="text-right">Ratings</th>
+                                    </tr>
+                                </thead> <!-- thead -->
+                                <tbody>
+                                    <tr>
+                                        <td>Example</td>
+                                        <td class="centered">Comedy</td>
+                                        <td class="text-right"><span class="icon icon-star icon-gold"></span>
+                                            <span class="icon icon-star icon-gold"></span>
+                                            <span class="icon icon-star icon-gold"></span>
+                                            <span class="icon icon-star-half icon-gold"></span>
+                                            <span class="icon icon-star-empty icon-gold"></span>
+                                        </td>
+                                    </tr>
+                                </tbody> <!-- tbody -->
+                            </table> <!-- end of table -->
+                        </div> <!-- table-responsive -->
+                    </div> <!-- tab-pane -->
+                    <!-- End of Bollywood
+                    =========================== -->
+                    <!-- Tamil
+                    =========================== -->
+                    <div class="tab-pane" id="tamil">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Movie</th>
+                                        <th class="centered">Genre</th>
+                                        <th class="text-right">Ratings</th>
+                                    </tr>
+                                </thead> <!-- thead -->
+                                <tbody>
+                                    <tr>
+                                        <td>Example</td>
+                                        <td class="centered">Comedy</td>
+                                        <td class="text-right"><span class="icon icon-star icon-gold"></span>
+                                            <span class="icon icon-star icon-gold"></span>
+                                            <span class="icon icon-star icon-gold"></span>
+                                            <span class="icon icon-star-half icon-gold"></span>
+                                            <span class="icon icon-star-empty icon-gold"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Example</td>
+                                        <td class="centered">Comedy</td>
+                                        <td class="text-right"><span class="icon icon-star icon-gold"></span>
+                                            <span class="icon icon-star icon-gold"></span>
+                                            <span class="icon icon-star icon-gold"></span>
+                                            <span class="icon icon-star-half icon-gold"></span>
+                                            <span class="icon icon-star-empty icon-gold"></span>
+                                        </td>
+                                    </tr>
+                                </tbody> <!-- tbody -->
+                            </table> <!-- end of table -->
+                        </div> <!-- table-responsive -->
+                    </div> <!-- tab-pane -->
+                    <!-- End of Tamil
+                    =========================== -->
+                    <!-- Malayalam
+                    =========================== -->
+                    <div class="tab-pane" id="malayalam">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Movie</th>
+                                        <th class="centered">Genre</th>
+                                        <th class="text-right">Ratings</th>
+                                    </tr>
+                                </thead> <!-- thead -->
+                                <tbody>
+                                    <tr>
+                                        <td>Example</td>
+                                        <td class="centered">Comedy</td>
+                                        <td class="text-right"><span class="icon icon-star icon-gold"></span>
+                                            <span class="icon icon-star icon-gold"></span>
+                                            <span class="icon icon-star icon-gold"></span>
+                                            <span class="icon icon-star-half icon-gold"></span>
+                                            <span class="icon icon-star-empty icon-gold"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Example</td>
+                                        <td class="centered">Comedy</td>
+                                        <td class="text-right"><span class="icon icon-star icon-gold"></span>
+                                            <span class="icon icon-star icon-gold"></span>
+                                            <span class="icon icon-star icon-gold"></span>
+                                            <span class="icon icon-star-half icon-gold"></span>
+                                            <span class="icon icon-star-empty icon-gold"></span>
+                                        </td>
+                                    </tr>
+                                </tbody> <!-- tbody -->
+                            </table> <!-- end of table -->
+                        </div> <!-- table-responsive -->
+                    </div> <!-- tab-pane -->
+                    <!-- End of Malayalam
+                    =========================== -->
+                </div>
+                <div class="bs-callout bs-callout-danger">
+                    <h4><span class="icon icon-bug"></span> Disclaimer </h4>
+                    <p class="justify">
+                    Piracy of intellectual property that’s protected by copyright law is a serious crime!
+                    Not only does it rob the makers of recordings, videos, movies, games, and other creative 
+                    works of the money they are entitled to, but it costs tens of thousands of people their 
+                    jobs each year. It also deprives governments at all levels of tax revenue. Piracy itself 
+                    is a crime, and it causes an increase in other types of crime. Let this repo be secret 
+                    among ourselves. Do not share this to anyone outside our office. Copy and watch movies
+                    at your own risk.
+                    </p>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" href="#" data-dismiss="modal" class="btn btn-primary">Close</button>
+            </div> <!-- modal-footer -->
+        </div> <!-- modal-body -->
+    </div> <!-- modal-content -->
+</div> <!-- modal-dialog -->
+</div> <!-- modal fade -->
+<!-- End Modal Reviews -->
+<!-- Modal RSS -->
+<div class="modal fade" id="modalRSS" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h2 class="modal-title"><span class="icon icon-rss"></span> RSS Feeds</h2>
+            </div>
+            <div class="modal-body">
+                <p class="justify">Don't mistake RSS with Rashtriya Swayamsevak Sangh (we don't want to hear screams from NDTV that '<strong>its a major blow to Modi</strong>') :-p.
+                We are working on it currently to make this feature available. </p>
+            </div>
+            <div class="bs-callout bs-callout-danger">
+                <h4><span class="icon icon-bug"></span> Disclaimer </h4>
+                <p class="justify">
+                Piracy of intellectual property that’s protected by copyright law is a serious crime!
+                Not only does it rob the makers of recordings, videos, movies, games, and other creative 
+                works of the money they are entitled to, but it costs tens of thousands of people their 
+                jobs each year. It also deprives governments at all levels of tax revenue. Piracy itself 
+                is a crime, and it causes an increase in other types of crime. Let this repo be secret 
+                among ourselves. Do not share this to anyone outside our office. Copy and watch movies
+                at your own risk.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" href="#" data-dismiss="modal" class="btn btn-primary">Close</button>
+            </div> <!-- modal-footer -->
+        </div> <!-- modal-body -->
+    </div> <!-- modal-content -->
+</div> <!-- modal-dialog -->
+</div> <!-- modal fade -->
+<!-- End Modal RSS -->
+
+<!-- END NAVBAR 
+=========================== -->
+
+<div id ="wrap">
+    <div class="container bs-docs-container" id="ContentCol">
+        <div class="page-header">
+            <h1><span class="icon icon-film"></span> Welcome to LAN Movie DB</h1>
+        </div> <!-- page-header -->
+        <div class="row">
+            <div class="col-md-9">
+                <div class="table-responsive">
+                    <!-- we open the `wrapper` element here, but close it in the `footer.html` file -->
