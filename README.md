@@ -23,5 +23,10 @@ Movie Share requires an Apache(2.0.23+) enabled HTTP server.
 - Copy `.htaccess` (now in the `/share` folder) into the root directory
   of your apache directory listing
 
-Idea and base template inspired from
-[Apaxy](https://github.com/AdamWhitcroft/Apaxy)
+Credis
+======
+- Idea and base template inspired from
+[Apaxy](https://github.com/AdamWhitcroft/Apaxy).
+- [Twitter Bootstrap](http://getbootstrap.com) for responsive css.
+- [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons/) for
+  the beautiful fonts used in this project.
