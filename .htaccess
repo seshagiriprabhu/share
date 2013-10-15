@@ -74,10 +74,5 @@
 
 	HeaderName /share/theme/header.html
 	ReadmeName /share/theme/footer.html
+    ErrorDocument 404 /share/theme/404.html
 	IndexStyleSheet "/share/theme/style.css"
-
-# STRONG HTACCESS PROTECTION
-<Files ~ "^.*\.([Hh][Tt][Aa])">
- order allow,deny
- deny from all
-</Files>
