@@ -19,9 +19,9 @@ Installation
 Movie Share requires an Apache(2.0.23+) enabled HTTP server.
 
 - Clone to the root directory of your apache directory listing.
-   ``git clone https://github.com/seshagiriprabhu/movie_share.git``
-- Rename `movie\_share` folder to `share`
+   ``git clone https://github.com/seshagiriprabhu/share.git``
 - Copy `.htaccess` (now in the `/share` folder) into the root directory
   of your apache directory listing
 
-
+Idea and base template inspired from
+[Apaxy](https://github.com/AdamWhitcroft/Apaxy)
